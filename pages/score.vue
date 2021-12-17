@@ -1,6 +1,12 @@
 <template>
   <section id="score">
-    <h1>Score</h1>
+    <div class="score_page">
+      <h1>Score</h1>
+      <div class="score_result">
+      </div>
+      <div class="score_choose">
+      </div> 
+    </div>
   </section>
 </template>
 

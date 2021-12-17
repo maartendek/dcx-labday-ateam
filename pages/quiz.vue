@@ -11,7 +11,7 @@
 		    </div>
 	    </div>	
 	    <div class="answer_field">
-		    <div class="answer_btn">
+		    <div class="answer_btns">
 		    </div>
 	    </div>
     </div>
