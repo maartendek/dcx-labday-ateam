@@ -2,13 +2,7 @@
   <div class="overlay-modal">
     <div class="container container-fluid the-modal">
       <h1>{{text}}</h1>
-<<<<<<< HEAD
-      <img :src="image" :alt="altText">
-      <button>Continue</button>
-      </div>
-=======
       <img v-if="image" :src="image" :alt="altText">
->>>>>>> 6a061cbae5ef3e55727af599279598ad1d476c4c
   </div>
 </template>
 
