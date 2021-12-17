@@ -3,6 +3,7 @@
     <div class="container container-fluid the-modal">
       <h1>{{text}}</h1>
       <img v-if="image" :src="image" :alt="altText">
+    </div>
   </div>
 </template>
 
