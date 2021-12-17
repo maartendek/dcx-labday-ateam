@@ -45,7 +45,17 @@ export default {
 </script>
 
 <style lang="css">
+
+  /* via https://www.gradient-animator.com/ */
   .histerisch {
-    background: red
+      background: linear-gradient(270deg, #ff0000, #ffee00, #18ff00, #00ffeb, #0011ff, #f200ff, #ff0000);
+      background-size: 1400% 1400%;
+
+      animation: loony-rainbow 5s linear infinite;
+  }
+  @keyframes loony-rainbow {
+      from {background-position:0% 50%}
+      to {background-position:100% 50%}
+      /* 100%{background-position:0% 50%} */
   }
 </style>
