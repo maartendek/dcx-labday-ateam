@@ -1,17 +1,17 @@
 <template>
   <section id="quiz">
     <div class="quiz_page">
-      <h1>Quiz</h1>
+      <h1>Quiz <span v-if="quiz">{{quiz.title}}</span></h1>
 	    <div class="question_field">
 		    <div class="question_intro">
-          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nec luctus nisl. Etiam gravida rhoncus urna nec congue. Aliquam blandit feugiat diam, eu lobortis orci feugiat eu. Sed enim nisl.
+          <p>{{question.intro}}
           </p>
 		    </div>
 		    <div class="question_img">
           <img src="../img/i_heart_grogu.jpg" alt="sweet baby yoda">
 		    </div>
 		    <div class="question">
-          <p>There is no try
+          <p>{{question.title}}
           </p>
 		    </div>
 	    </div>	
@@ -37,9 +37,15 @@ export default {
 
   computed: {
     quiz () {
-      const quiz = this.$store.state.quiz;
-      console.log('quiz = ', quiz)
+      const quiz = JSON.parse(JSON.stringify(this.$store.state.quiz.quiz));
+      console.log('quiz = ', JSON.parse(JSON.stringify(quiz)))
       return quiz
+    },
+    question () {
+      const quiz = JSON.parse(JSON.stringify(this.$store.state.quiz.quiz));
+      const question = quiz.questions ? quiz.questions[0] : [];
+      console.log('question ', question)
+      return question
     }
   },
   mounted () {

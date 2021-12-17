@@ -2,12 +2,11 @@ export const state = () => ({
   quiz: {
       title: 'no quiz'
   },
+  currentQuestion: 0,
 })
 
 export const mutations = {
   set(state, quiz) {
-      console.log('set', quiz)
     state.quiz = quiz
   },
-
 }
