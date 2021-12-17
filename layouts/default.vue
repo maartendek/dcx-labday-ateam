@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app"  :class="{ histerisch: isHisterisch }">
       <NavBar />
       <Nuxt />
   </div>
@@ -7,6 +7,9 @@
 
 <script>
 export default {
+  data: () => ({
+
+  }),
 
   head () {
     return {
@@ -19,12 +22,12 @@ export default {
     }
   },
 
-  data: () => ({
-
-  }),
 
   computed: {
 
+    isHisterisch () {
+      return this.$store.state.histerie.isHisterisch
+    }
   },
   mounted () {
 
@@ -37,6 +40,8 @@ export default {
 
 </script>
 
-<style lang="scss">
-
+<style lang="css">
+  .histerisch {
+    background: red
+  }
 </style>

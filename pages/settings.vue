@@ -17,6 +17,8 @@
           </div>
         </div>
       <button class="continue_btn" type="button">Next!</button>
+      
+      <button @click="toggleHisterie">toggle histerie {{isHisterisch}}</button>
     </div>
   </section>
 </template>
@@ -30,12 +32,23 @@ export default {
 
   computed: {
 
+    isHisterisch () {
+      return this.$store.state.histerie.isHisterisch
+    }
+
   },
   mounted () {
 
   },
 
   methods: {
+
+    toggleHisterie (e) {
+      console.log("toggle of component")
+      this.$store.commit('histerie/toggle', e.target.value)
+       // e.target.value = ''
+       // zou automatisch moeten togglen
+    }
 
   }
 }
