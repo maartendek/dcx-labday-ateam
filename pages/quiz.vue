@@ -22,7 +22,7 @@
 	    </div>
       <button class="continue_btn btn btn-secondary mt-4" type="button">Next!</button>
     </div>
-    <Modal v-if="questionStatus === 'fail'" text="Test" :image="require('~/assets/yoda-much-to-learn-you-still-have.gif')" altText="sweet baby yoda" />
+    <Modal v-if="questionStatus === 'fail'" text="FOUT!" :image="require('~/assets/yoda-much-to-learn-you-still-have.gif')" altText="sweet baby yoda" />
     <Modal v-if="questionStatus === 'pass'" text="GOED!" />
     <SaberConfetti v-if="questionStatus === 'pass' && isHysterisch" />
   </section>
