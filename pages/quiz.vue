@@ -30,7 +30,7 @@
 export default {
 
   data: () => ({
-    questionAnswered: true
+    questionAnswered: false
   }),
 
   computed: {

@@ -17,3 +17,15 @@ section#quiz{
     background: linear-gradient(180.05deg, #0C9CEA 0.04%, #56E8FF 94.06%);
     color: white;
 }
+
+section#quiz .answer_btn{
+    width:150px;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-top:10px;
+    background: #F50A57;
+}
+
+#section#quiz .continue_btn{
+    background: #FFBC01;
+}
