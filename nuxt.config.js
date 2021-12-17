@@ -21,6 +21,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    script: [{type:"module", src:"/confetti.js"}]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
