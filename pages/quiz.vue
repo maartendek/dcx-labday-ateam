@@ -8,7 +8,7 @@
           </p>
 		    </div>
 		    <div class="question_img">
-          <img src="../img/i_heart_grogu.jpg" alt="sweet baby yoda">
+          <img :src="question.image" :alt="question.alt">
 		    </div>
 		    <div class="question">
           <p>{{question.question}}
@@ -22,6 +22,7 @@
 	    </div>
       <button class="continue_btn" type="button">Next!</button>
     </div>
+    <Modal v-if="questionAnswered" text="Test" :image="require('~/assets/yoda-much-to-learn-you-still-have.gif')" altText="sweet baby yoda"/>
   </section>
 </template>
 
@@ -29,7 +30,7 @@
 export default {
 
   data: () => ({
-
+    questionAnswered: false
   }),
 
   computed: {
