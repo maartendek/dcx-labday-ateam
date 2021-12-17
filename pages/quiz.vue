@@ -8,19 +8,16 @@
           </p>
 		    </div>
 		    <div class="question_img">
-          <img src="../img/i_heart_grogu.jpg" alt="sweet baby yoda">
+          <img :src="question.image" alt="sweet baby yoda">
 		    </div>
 		    <div class="question">
-          <p>{{question.title}}
+          <p>{{question.question}}
           </p>
 		    </div>
 	    </div>	
 	    <div class="answer_field">
 		    <div class="answer_btns">
-          <button class="answer_btn" type="button">Do!</button>
-          <button class="answer_btn" type="button">Or Do Not!</button>
-          <button class="answer_btn" type="button">Click Me!</button>
-          <button class="answer_btn" type="button">No, Click Me!</button>
+          <button v-for="answer in question.answers" :key="answer" class="answer_btn" type="button"  >{{answer}}</button>
 		    </div>
 	    </div>
       <button class="continue_btn" type="button">Next!</button>
@@ -38,7 +35,6 @@ export default {
   computed: {
     quiz () {
       const quiz = JSON.parse(JSON.stringify(this.$store.state.quiz.quiz));
-      console.log('quiz = ', JSON.parse(JSON.stringify(quiz)))
       return quiz
     },
     question () {
