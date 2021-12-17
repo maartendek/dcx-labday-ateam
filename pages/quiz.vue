@@ -36,7 +36,11 @@ export default {
   }),
 
   computed: {
-
+    quiz () {
+      const quiz = this.$store.state.quiz;
+      console.log('quiz = ', quiz)
+      return quiz
+    }
   },
   mounted () {
 

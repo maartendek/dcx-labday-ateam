@@ -6,8 +6,9 @@
 </template>
 
 <script>
-export default {
+import importeddata from '~/data/starwars.json';
 
+export default {
   head () {
     return {
       title: 'Labday #5',
@@ -27,7 +28,9 @@ export default {
 
   },
   mounted () {
-
+    setTimeout(() => {
+    this.$store.commit('quiz/set', importeddata)
+    }, 100)
   },
 
   methods: {
@@ -40,3 +43,4 @@ export default {
 <style lang="scss">
 
 </style>
+
