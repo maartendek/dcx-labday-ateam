@@ -6,6 +6,8 @@
 </template>
 
 <script>
+import importeddata from '~/data/starwars.json';
+
 export default {
   data: () => ({
 
@@ -30,7 +32,9 @@ export default {
     }
   },
   mounted () {
-
+    setTimeout(() => {
+    this.$store.commit('quiz/set', importeddata)
+    }, 100)
   },
 
   methods: {
