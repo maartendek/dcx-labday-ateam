@@ -18,7 +18,7 @@
         },
         {
             "intro": "In de volgende vraad leren we iets over de personages",
-            "image": "../yoda.jpg",
+            "image": "../img/yoda.jpg",
             "alt": "Yoda",
             "question": "Who is the Yoda?",
             "answers": [
