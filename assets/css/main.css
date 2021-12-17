@@ -18,12 +18,21 @@ section#quiz{
     color: white;
 }
 
+.answer_btns{
+    width:320px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin:auto;
+}
+
 section#quiz .answer_btn{
     width:150px;
     padding-top:20px;
     padding-bottom:20px;
     margin-top:10px;
     background: #F50A57;
+    border:none;
 }
 
 #section#quiz .continue_btn{
