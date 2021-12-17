@@ -52,7 +52,7 @@ export default {
     question () {
       const quiz = JSON.parse(JSON.stringify(this.$store.state.quiz.quiz));
       console.log(this.current)
-      const question = quiz.questions && quiz.questions.length > this.current+1 ? quiz.questions[this.current] : [];
+      const question = quiz.questions && quiz.questions.length >= this.current-1 ? quiz.questions[this.current] : [];
       return question;
     }
   },
