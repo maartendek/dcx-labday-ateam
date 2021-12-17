@@ -10,7 +10,6 @@ export default {
 
   computed: {},
   mounted() {
-      
     this.hey()
   },
 

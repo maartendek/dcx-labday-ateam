@@ -8,3 +8,16 @@
       </ul>
   </nav>
 </template>
+
+
+<style scoped>
+  ul{
+    display: flex;
+    flex-direction: row;
+    justify-items: space-around;
+  }
+  li{
+    width: 6rem;
+    list-style: none;
+  }
+</style>
