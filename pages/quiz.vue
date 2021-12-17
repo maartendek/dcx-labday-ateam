@@ -23,6 +23,7 @@
           <button class="answer_btn" type="button">No, Click Me!</button>
 		    </div>
 	    </div>
+      <button class="continue_btn" type="button">Next!</button>
     </div>
   </section>
 </template>
