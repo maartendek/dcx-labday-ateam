@@ -20,7 +20,6 @@
           <button v-for="answer in question.answers" :key="answer" class="answer_btn btn btn-primary" type="button" @click="checkAnswer">{{answer}}</button>
 		    </div>
 	    </div>
-      <button class="continue_btn btn btn-secondary mt-4" type="button">Next!</button>
     </div>
     <Modal v-if="questionStatus === 'fail'" text="FOUT!" :image="require('~/assets/yoda-much-to-learn-you-still-have.gif')" altText="sweet baby yoda" />
     <Modal v-if="questionStatus === 'pass'" text="GOED!" />
