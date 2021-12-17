@@ -1,9 +1,30 @@
 <template>
-  <h1>Test</h1>
+  <section id="home">
+    <h1>Home</h1>
+  </section>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage',
+
+  data: () => ({
+
+  }),
+
+  computed: {
+
+  },
+  mounted () {
+
+  },
+
+  methods: {
+
+  }
 }
+
 </script>
+
+<style lang="scss">
+
+</style>

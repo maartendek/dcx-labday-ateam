@@ -1,9 +1,30 @@
 <template>
-  <Tutorial />
+  <section id="quiz">
+    <h1>Quiz</h1>
+  </section>
 </template>
 
 <script>
 export default {
-  name: 'IndexPage',
+
+  data: () => ({
+
+  }),
+
+  computed: {
+
+  },
+  mounted () {
+
+  },
+
+  methods: {
+
+  }
 }
+
 </script>
+
+<style lang="scss">
+
+</style>

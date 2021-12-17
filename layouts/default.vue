@@ -10,12 +10,10 @@ export default {
 
   head () {
     return {
-      title: 'Team Uitbehandeld',
+      title: 'Labday #5',
       meta: [
         {
-          hid: 'description',
-          name: 'description',
-          content: 'informatie voor uitbehandelde mensen en hun families'
+          content: 'Application to learn dutch'
         }
       ]
     }
