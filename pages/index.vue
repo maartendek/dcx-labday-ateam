@@ -40,7 +40,7 @@
               </label>
             </div>
           </div>
-          <button type="submit" class="btn btn-primary mt-5">Continue</button>
+          <button type="submit" class="btn btn-primary mt-5" @click="startQuiz">Continue</button>
         </form>
       </div>
     </div>
@@ -62,7 +62,9 @@ export default {
   },
 
   methods: {
-
+    startQuiz() {
+      this.$router.push('/quiz')
+    }
   }
 }
 
