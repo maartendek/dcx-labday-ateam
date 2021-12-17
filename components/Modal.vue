@@ -1,15 +1,14 @@
 <template>
   <div class="overlay-modal">
       <h1>{{text}}</h1>
-      <img :src="image" :alt="altText">
-      <button>Continue</button>
+      <img v-if="image" :src="image" :alt="altText">
   </div>
 </template>
 
 <script>
 export default {
 
-  props: ["text", "image", "altText"],
+  props: ["text", "image", "altText", "callback"],
 
   data: () => ({
 

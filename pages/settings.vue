@@ -2,35 +2,14 @@
   <section id="settings">
     <div class="settings_page">
         <div class="settings_text">
-          <h1>Settings</h1>
-          <p> What does it do
+          <h1>Instellingen</h1>
+          <p> Hier kun je je instellingen veranderen volgens je persoonlijke voorkeur
           </p>
         </div>
-        <div class="settings_selection">
-          <div class="settings_mode">
-            <p>Choose your color
-            </p>
-            <div class="mode_btns">
-              <input class="mode_btn" type="radio">Choice 1</input>
-              <input class="mode_btn" type="radio">Choice 2</input>
-              <input class="mode_btn" type="radio">Choice 3</input>
-              <input class="mode_btn" type="radio">Choice 4</input>
-            </div>
-          </div>
-          <div class="settings_lang">
-            <p>Choose your language
-            </p>
-              <div class="lang_btns">
-                <input class="lang_btn" type="radio">Choice 1</input>
-                <input class="lang_btn" type="radio">Choice 2</input>
-                <input class="lang_btn" type="radio">Choice 3</input>
-                <input class="lang_btn" type="radio">Choice 4</input>
-              </div>
-          </div>
-        </div>
-      <button class="continue_btn" type="button">Next!</button>
       
-      <button @click="toggleHisterie">toggle histerie {{isHisterisch}}</button>
+
+      <input type="checkbox" id="checkbox" v-model="isHisterisch" @click="toggleHisterie">
+      <label for="checkbox">Ik wil <span v-if="isHisterisch">veel</span><span v-else>geen</span> kleuren en animaties</label>
     </div>
   </section>
 </template>

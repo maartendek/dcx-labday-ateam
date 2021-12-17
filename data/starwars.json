@@ -18,17 +18,30 @@
         },
         {
             "intro": "In de volgende vraad leren we iets over de personages",
-            "image": "../img/i_heart_grogu.jpg",
+            "image": "../yoda.jpg",
             "alt": "Yoda",
-            "question": "How is the Yoda?",
+            "question": "Who is the Yoda?",
             "answers": [
-                "../img/yoda.jpg",
-                "../img/Yoda_baby.jpg",
-                "../img/grogu.jpg",
-                "../img/yoda_lego.jpg"
+                "A cute green doll",
+                "An old wise jedi master",
+                "Someone with a speech-disabillity",
+                "Grogu's father"
             ],
-            "correct": "../img/yoda.jpg"
-        } 
+            "correct": "An old wise jedi master"
+        },
+        {
+            "intro": "Hier behandelen we de kracht van het universum",
+            "image": "../img/force.jpg",
+            "alt": "hands using the force",
+            "question": "What is the Force?",
+            "answers": [
+                "De kracht van het zijn",
+                "Een makkelijke afstandsbediening",
+                "Maakt werken vanuit thuis mogelijk",
+                "Een gekke handbeweging"
+            ],
+            "correct": "De kracht van het zijn"
+        }  
     ]
 }
 

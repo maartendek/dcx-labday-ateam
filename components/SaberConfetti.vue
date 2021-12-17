@@ -61,6 +61,7 @@ export default {
         position: absolute;
         width: 100vw;
         height: 100vh;
-        z-index: -1;
+        z-index: 9;
+        top: 0
     }
 </style>

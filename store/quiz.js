@@ -9,4 +9,7 @@ export const mutations = {
   set(state, quiz) {
     state.quiz = quiz
   },
+  next(state) {
+      state.currentQuestion++
+  }
 }
