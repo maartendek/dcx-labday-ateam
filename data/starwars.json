@@ -28,7 +28,20 @@
                 "../img/yoda_lego.jpg"
             ],
             "correct": "../img/yoda.jpg"
-        } 
+        },
+        {
+            "intro": "Hier behandelen we de kracht van het universum",
+            "image": "../img/force.jpg",
+            "alt": "hands using the force",
+            "question": "What is the Force?",
+            "answers": [
+                "De kracht van het zijn",
+                "Een makkelijke afstandsbediening",
+                "Maakt werken vanuit thuis mogelijk",
+                "Een gekke handbeweging"
+            ],
+            "correct": "De kracht van het zijn"
+        }  
     ]
 }
 
