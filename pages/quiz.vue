@@ -22,6 +22,7 @@
 	    </div>
       <button class="continue_btn" type="button">Next!</button>
     </div>
+    <Modal v-if="questionAnswered" text="Test" :image="require('~/assets/yoda-much-to-learn-you-still-have.gif')" altText="sweet baby yoda"/>
   </section>
 </template>
 
@@ -29,7 +30,7 @@
 export default {
 
   data: () => ({
-
+    questionAnswered: false
   }),
 
   computed: {
