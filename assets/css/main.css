@@ -1,21 +1,12 @@
-/* body{
-    font-family: "Roboto", sans-serif;
+section#home{
+    height:100vh;
+    background:purple;
 }
 
-div#app{
-    width:100vw;
+section#home .container{
+    margin-top:0 !important;
 }
 
-h1{
-    font-size: 38px;
-    font-weight:700;
+section#home label.h2-size{
+    font-size:24px;
 }
-
-h2{
-    font-size: 38px;
-    font-weight:400;
-}
-
-section#quiz div.quiz_page h1{
-    font-family: sans-serif
-} */

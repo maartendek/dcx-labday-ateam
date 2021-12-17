@@ -1,6 +1,6 @@
 <template>
   <div id="app"  :class="{ histerisch: isHisterisch }">
-      <NavBar />
+      <!-- <NavBar /> -->
       <Nuxt />
   </div>
 </template>
