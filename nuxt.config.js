@@ -5,7 +5,7 @@ export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
   router: {
-    base: '/dcx-labday-ateam/'
+    base: '/dcx-labday-ateam/',
   },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -21,7 +21,9 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    script: [{type:"module", src:"/confetti.js"}]
+    script: [
+      { type: 'module', src: '/confetti.js' }
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
