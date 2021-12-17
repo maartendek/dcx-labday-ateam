@@ -2,6 +2,7 @@
   <div id="app"  :class="{ histerisch: isHisterisch }">
       <NavBar />
       <Nuxt />
+      <HeyGif v-if="isHisterisch"/>
   </div>
 </template>
 
