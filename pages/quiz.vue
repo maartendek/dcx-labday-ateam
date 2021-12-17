@@ -1,14 +1,14 @@
 <template>
   <section id="quiz">
-    <div class="quiz_page">
-      <h1>Quiz <span v-if="quiz">{{quiz.title}}</span></h1>
+    <div class="container container-fluid quiz_page text-center">
+      <h1 class="mt-3">Quiz <span v-if="quiz">{{quiz.title}}</span></h1>
 	    <div class="question_field">
 		    <div class="question_intro">
           <p>{{question.intro}}
           </p>
 		    </div>
 		    <div class="question_img">
-          <img :src="question.image" :alt="question.alt">
+          <img class="img-fluid" :src="question.image" :alt="question.alt">
 		    </div>
 		    <div class="question">
           <p>{{question.question}}
@@ -17,10 +17,10 @@
 	    </div>	
 	    <div class="answer_field">
 		    <div class="answer_btns">
-          <button v-for="answer in question.answers" :key="answer" class="answer_btn" type="button"  >{{answer}}</button>
+          <button v-for="answer in question.answers" :key="answer" class="answer_btn btn btn-primary mr-2" type="button"  >{{answer}}</button>
 		    </div>
 	    </div>
-      <button class="continue_btn" type="button">Next!</button>
+      <button class="continue_btn btn btn-secondary mt-4" type="button">Next!</button>
     </div>
     <Modal v-if="questionAnswered" text="Test" :image="require('~/assets/yoda-much-to-learn-you-still-have.gif')" altText="sweet baby yoda"/>
   </section>
@@ -30,7 +30,7 @@
 export default {
 
   data: () => ({
-    questionAnswered: false
+    questionAnswered: true
   }),
 
   computed: {

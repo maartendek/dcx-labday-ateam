@@ -1,12 +1,19 @@
 section#home{
     height:100vh;
-    background:purple;
+    background: linear-gradient(180.05deg, #491C83 0.04%, #6226A2 94.06%);
+    color:white;
 }
 
 section#home .container{
-    margin-top:0 !important;
+    /* margin-top:0 !important; */
 }
 
 section#home label.h2-size{
     font-size:24px;
+}
+
+section#quiz{
+    height:100vh;
+    background: linear-gradient(180.05deg, #0C9CEA 0.04%, #56E8FF 94.06%);
+    color: white;
 }
