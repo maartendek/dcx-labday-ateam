@@ -6,6 +6,7 @@
         {
             "intro": "In deze dramatische scene leren we iets over de familie Skywalker.",
             "image": "../img/i_heart_grogu.jpg",
+            "alt": "sweet baby yoda",
             "question": "Luke, I am your..",
             "answers": [
                 "Mother",
