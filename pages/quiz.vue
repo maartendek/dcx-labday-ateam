@@ -8,7 +8,7 @@
           </p>
 		    </div>
 		    <div class="question_img">
-          <img src="../img/i_heart_grogu.jpg" alt="sweet baby yoda">
+          <img :src="question.image" alt="sweet baby yoda">
 		    </div>
 		    <div class="question">
           <p>{{question.question}}

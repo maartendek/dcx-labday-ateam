@@ -1,9 +1,11 @@
 {
     "title": "Star Wars voor noobs",
     "intro": "Leer Star Wars woorden in het Engels zodat je de films goed begrijpt.",
+    
     "questions": [
         {
             "intro": "In deze dramatische scene leren we iets over de familie Skywalker.",
+            "image": "../img/i_heart_grogu.jpg",
             "question": "Luke, I am your..",
             "answers": [
                 "Mother",
