@@ -5,8 +5,8 @@
     "questions": [
         {
             "intro": "In deze dramatische scene leren we iets over de familie Skywalker.",
-            "image": "../img/i_heart_grogu.jpg",
-            "alt": "sweet baby yoda",
+            "image": "../img/papa.jpg",
+            "alt": "Darth Vader",
             "question": "Luke, I am your..",
             "answers": [
                 "Mother",
@@ -16,5 +16,19 @@
             ],
             "correct": "Father"
         }
+        {
+            "intro": "In de volgende vraad leren we iets over de personages",
+            "image": "../img/i_heart_grogu.jpg",
+            "alt": "Yoda",
+            "question": "How is the Yoda?",
+            "answers": [
+                "../img/yoda.jpg",
+                "../img/Yoda_baby.jpg",
+                "../img/grogu.jpg",
+                "../img/yoda_lego.jpg"
+            ],
+            "correct": "../img/yoda.jpg"
+        } 
     ]
 }
+
