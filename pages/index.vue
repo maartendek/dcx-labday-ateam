@@ -10,7 +10,6 @@
 </template>
 
 <script>
-// import SaberConfetti from "../components/SaberConfetti.vue"
 export default {
 
   data: () => ({

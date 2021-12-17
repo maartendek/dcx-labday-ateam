@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app"  :class="{ histerisch: isHisterisch }">
       <NavBar />
       <Nuxt />
   </div>
@@ -9,6 +9,10 @@
 import importeddata from '~/data/starwars.json';
 
 export default {
+  data: () => ({
+
+  }),
+
   head () {
     return {
       title: 'Labday #5',
@@ -20,12 +24,12 @@ export default {
     }
   },
 
-  data: () => ({
-
-  }),
 
   computed: {
 
+    isHisterisch () {
+      return this.$store.state.histerie.isHisterisch
+    }
   },
   mounted () {
     setTimeout(() => {
@@ -40,7 +44,8 @@ export default {
 
 </script>
 
-<style lang="scss">
-
+<style lang="css">
+  .histerisch {
+    background: red
+  }
 </style>
-
